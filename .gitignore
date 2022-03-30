@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 .sample_ids.txt
+.deta
 
 __pycache__/
 *.py[cod]

@@ -6,9 +6,9 @@ name = "pypi"
 [packages]
 zeep = "*"
 fastapi = "*"
-uvicorn = "*"
 
 [dev-packages]
+uvicorn = "*"
 
 [requires]
 python_version = "3.8"

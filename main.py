@@ -1,13 +1,15 @@
 from zeep import Client, exceptions
 from fastapi import FastAPI, Query
 
-app = FastAPI()
+__version__ = "0.1.0"
+
+app = FastAPI(title="VIES-API", description="For easy interaction with the VIES VAT-ID Validation service of the European Commission.", version=__version__)
 
 # setup zeep client
 client = Client(wsdl="http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl")
 
 
-@app.get("/check-vat-id")
+@app.get("/check-vat-id", tags=["VAT Validation"])
 def check_vat_id(
     state: str = Query(...,
                     description="The country code of the member State. The first two characters of the VAT-ID.",
