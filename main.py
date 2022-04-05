@@ -63,4 +63,3 @@ def check_vat_id(vat_id: Vat_id=Depends()):
         data = helpers.serialize_object(response)
         success = True
         return {"success": success, "data": data}
-
