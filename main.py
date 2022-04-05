@@ -2,6 +2,7 @@ import datetime
 
 from zeep import Client, exceptions, helpers
 from fastapi import FastAPI, Query, Depends     # Depends is necessary to use Vat_id class as model for Query Parameters (see check_vat_id function parameters). Otherwise it would be used as model for body.
+from fastapi.responses import RedirectResponse
 from typing import Optional
 from pydantic import BaseModel
 

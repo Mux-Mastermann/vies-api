@@ -12,9 +12,9 @@ You can find the full API-Documentation on:
 
 ## Usage
 
-If you want validate a VAT-ID you can use the example python code below.
+If you want to validate a VAT-ID you can use the example python code below.
 
-![example](example.png)
+![example-image](https://github.com/Mux-Mastermann/vies-api/blob/main/example.png?raw=true)
 
 ## Disclaimer
 
