@@ -7,7 +7,7 @@ from typing import Optional
 from pydantic import BaseModel
 
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 SOAP_URL = "http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl"
 
 
@@ -38,7 +38,7 @@ class Vies_data(BaseModel):
 
 # OUTPUT response model which is returned from the vies-api
 class Response(BaseModel):
-    success: str
+    success: bool
     data: Optional[Vies_data]
     error_message: Optional[str]
 
